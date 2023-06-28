@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            margin: 0 auto;
+            max-width: 1000px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .page-title {
+            text-align: center;
+
+            @media only screen and (min-width: 768px) {
+                text-align: left;
+            }
+        }
+
+        .gallery {
+            list-style-type: none;
+            padding:0;
+            margin: 0;
+            display: grid;
+            gap: 16px;
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+
+            @media only screen and (min-width: 768px) {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+
+            @media only screen and (min-width: 1200px) {
+                grid-template-columns: repeat(5, minmax(0, 1fr));
+            }
+        }
+
+        .gallery-item {
+            display:flex;
+            flex-direction: column;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+
+        .gallery-image {
+            width: 175px;
+        }
+
+        .gallery-image-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: blue;
+        }
+
+        .gallery-title {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 400;
+            padding: 16px;
+        }
+
+        .gallery-title-wrapper {
+            display: flex;
+            flex-grow: 1;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+    <h1 class="page-title">Gallery heading</h1>
+        <ul class="gallery">
+            <li class="gallery-item">
+                <div class="gallery-image-wrapper">
+                    <img class="gallery-image" src="./placeholder-image.png" alt="Placeholder" />
+                </div>
+                <div class="gallery-title-wrapper">
+                    <h3 class="gallery-title">Image title</h3>
+                </div>
+            </li>
+            <li class="gallery-item">
+                <div class="gallery-image-wrapper">
+                    <img class="gallery-image" src="./placeholder-image.png" alt="Placeholder" />
+                </div>
+                <div class="gallery-title-wrapper">
+                    <h3 class="gallery-title">Image title</h3>
+                </div>
+            </li>
+            <li class="gallery-item">
+                <div class="gallery-image-wrapper">
+                    <img class="gallery-image" src="./placeholder-image.png" alt="Placeholder" />
+                </div>
+                <div class="gallery-title-wrapper">
+                    <h3 class="gallery-title">Image title</h3>
+                </div>
+            </li>
+            <li class="gallery-item">
+                <div class="gallery-image-wrapper">
+                    <img class="gallery-image" src="./placeholder-image.png" alt="Placeholder" />
+                </div>
+                <div class="gallery-title-wrapper">
+                    <h3 class="gallery-title">Image title</h3>
+                </div>
+            </li>
+            <li class="gallery-item">
+                <div class="gallery-image-wrapper">
+                    <img class="gallery-image" src="./placeholder-image.png" alt="Placeholder" />
+                </div>
+                <div class="gallery-title-wrapper">
+                    <h3 class="gallery-title">Image title</h3>
+                </div>
+            </li>
+            <li class="gallery-item">
+                <div class="gallery-image-wrapper">
+                    <img class="gallery-image" src="./placeholder-image.png" alt="Placeholder" />
+                </div>
+                <div class="gallery-title-wrapper">
+                    <h3 class="gallery-title">Image title</h3>
+                </div>
+            </li>
+            <li class="gallery-item">
+                <div class="gallery-image-wrapper">
+                    <img class="gallery-image" src="./placeholder-image.png" alt="Placeholder" />
+                </div>
+                <div class="gallery-title-wrapper">
+                    <h3 class="gallery-title">Image title</h3>
+                </div>
+            </li>
+            <li class="gallery-item">
+                <div class="gallery-image-wrapper">
+                    <img class="gallery-image" src="./placeholder-image.png" alt="Placeholder" />
+                </div>
+                <div class="gallery-title-wrapper">
+                    <h3 class="gallery-title">Image title</h3>
+                </div>
+            </li>
+            <li class="gallery-item">
+                <div class="gallery-image-wrapper">
+                    <img class="gallery-image" src="./placeholder-image.png" alt="Placeholder" />
+                </div>
+                <div class="gallery-title-wrapper">
+                    <h3 class="gallery-title">Image title</h3>
+                </div>
+            </li>
+            <li class="gallery-item">
+                <div class="gallery-image-wrapper">
+                    <img class="gallery-image" src="./placeholder-image.png" alt="Placeholder" />
+                </div>
+                <div class="gallery-title-wrapper">
+                    <h3 class="gallery-title">Image title</h3>
+                </div>
+            </li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum autem voluptatem similique, nihil odit accusamus, numquam sed magni in quos unde, dolorem eligendi? Debitis autem beatae aperiam tempore. Fuga, quia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum autem voluptatem similique, nihil odit accusamus, numquam sed magni in quos unde, dolorem eligendi? Debitis autem beatae aperiam tempore. Fuga, quia?</p>
+        
+    </div>
+</body>
+</html>
